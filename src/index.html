@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    
+    
 
 
     <header> 
@@ -17,17 +19,46 @@
     <p>BIENVENIDOS</p>
      <button type="button" id="start">EMPEZAR</button>
   </div>
-
+  
+  
+<form>
  <div id= "main-page">
-  <form>
+
+    <label for= "input-text"> Ingresa el desplazamiento que deseas para tu mensaje</label>
+
+    <p><input rows="4" cols="50" type="number" id="offsetin"> 
+    </input>
+   </p>
+  
    <label for= "input-text"> Ingresa el mensaje que quieres cifrar</label>
-   <p><input type="text" name="message"></p>
+   <p><input rows="4" cols="50" type="text" id="messagetocipher"> 
+   </input>
+  </p>
 
-  </form>
+  <table>
+    <button type="button" id="cipherbutton">CIFRAR</button>
+  </table>
+
+  <p><input rows="4" cols="50" type="text" id="messagetodecipher"> 
+  </input>
+ </p>
+
+  <table>
+    <button type="button" id="decipherbutton">DESCIFRAR </button>    
+  </table>
+  
+    <p><input rows="4" cols="50" type="text" id="result"> 
+    </input>
+   </p>
+
+ 
+
  </div>
-
+</form>
 
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
+
+
