@@ -1,6 +1,5 @@
 const cipher_ = (message,offset) => {
 
-  
   let to_codeascii= [];
   let applying_offset =[];
   let ascii_to_cipher = [];
@@ -20,11 +19,20 @@ const cipher_ = (message,offset) => {
   let applying_offset_de =[];
   let ascii_to_cipher_de = [];
   
-    for (let i=0; i <messagede.length; i++) {
+  for (let i=0; i <messagede.length; i++) {
     
-     tocodeascii_de.push(messagede.charCodeAt(i));
-     applying_offset_de.push((Math.abs(tocodeascii_de[i]-offsetde -65))%26 +65);
-     ascii_to_cipher_de.push(String.fromCharCode(applying_offset_de[i]));
+  tocodeascii_de.push(messagede.charCodeAt(i));
+
+if (Math.sign((tocodeascii_de[i]-offsetde -65)%26)>=0)  {
+  applying_offset_de.push((tocodeascii_de[i]-offsetde -65)%26 +65);
+  }  
+else {
+  applying_offset_de.push (26-((Math.abs(tocodeascii_de[i]-offsetde -65))%26) +65);
+  }
+     /*applying_offset_de.push((Math.abs(tocodeascii_de[i]-offsetde -65))%26 +65);
+    26 - math.abs todo ) +65 <= todo para ejemplos negativos */
+  ascii_to_cipher_de.push(String.fromCharCode(applying_offset_de[i]));
+
     }
     let straasciide= ascii_to_cipher_de.join("");
     return (straasciide)

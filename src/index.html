@@ -6,14 +6,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    
-    
-
-
     <header> 
-      <h1>TRADUCTOR DE MENSAJES
+      <h1>BIENVENIDO AL CHAT TRADUCTOR DE MENSAJES
       </h1>
     </header>
+    <img src="https://images.pexels.com/photos/1236044/pexels-photo-1236044.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class = "fontimage">
     
   <div id= "first-page-title">
     <p>BIENVENIDOS</p>
@@ -22,38 +19,31 @@
   
   
 <form>
- <div id= "main-page">
 
+ <div id= "main-page">
+    <!-- Eliminar comentario cuando el textarea se solucione
+      <p> <textarea id="result" placeholder = "Aqui verás tu mensaje"class="chat" ></textarea></p> -->
     <label for= "input-text"> Ingresa el desplazamiento que deseas para tu mensaje</label>
 
-    <p><input rows="4" cols="50" type="number" id="offsetin"> 
-    </input>
-   </p>
+  <p><input type="number" id="offsetin"></p>
   
    <label for= "input-text"> Ingresa el mensaje que quieres cifrar</label>
-   <p><input rows="4" cols="50" type="text" id="messagetocipher"> 
-   </input>
-  </p>
+  <p><input type="text" id="messagetocipher" placeholder="Escribe AQUI el mensaje que quieres cifrar"> </p>
 
   <table>
     <button type="button" id="cipherbutton">CIFRAR</button>
   </table>
 
-  <p><input rows="4" cols="50" type="text" id="messagetodecipher"> 
-  </input>
- </p>
+<p><input id="messagetodecipher" type= "text"  placeholder="Escribe AQUI el mensaje que quieres descifrar" ></p>
 
   <table>
     <button type="button" id="decipherbutton">DESCIFRAR </button>    
   </table>
   
-    <p><input rows="4" cols="50" type="text" id="result"> 
-    </input>
-   </p>
+  <button type="button" id="clean">LIMPIAR </button>    
 
- 
 
- </div>
+  </div>
 </form>
 
     <script src="cipher.js"></script>

@@ -8,24 +8,27 @@ document.getElementById("start").addEventListener("click", function(){
     });
 
 
-let ciphertext = document.getElementById("cipherbutton").addEventListener("click", function() {
+document.getElementById("cipherbutton").addEventListener("click", function() {
 
 let offseten = parseInt(document.getElementById("offsetin").value);
 let messageen = document.getElementById("messagetocipher").value;
 let messageentrance= cipher.encode(messageen,offseten);
-console.log(messageentrance);
-
-document.getElementById("result").value = messageentrance;
+document.getElementById("result").value += messageentrance;
 });
 
-let deciphertext = document.getElementById("decipherbutton").addEventListener("click", function() {
+document.getElementById("decipherbutton").addEventListener("click", function() {
 
     let offseten = parseInt(document.getElementById("offsetin").value);
     let messageen = document.getElementById("messagetodecipher").value;
     let messageentrance= cipher.decode(messageen,offseten);
-    console.log(messageentrance);
-    
     document.getElementById("result").value = messageentrance;
     });
 
+
+document.getElementById("clean").addEventListener("click",function (){
+     let clean = "";    
+    document.getElementById("messagetocipher").value = clean;
+        document.getElementById("messagetodecipher").value= clean; 
+        document.getElementById("result").value = clean;
+    });
 
