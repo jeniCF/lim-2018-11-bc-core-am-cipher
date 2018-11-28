@@ -1,8 +1,15 @@
+h1{
+  text-align: center;
+  text-decoration-line: overline underline;
+  text-decoration-style: wavy;
+  color: #dedede
+
+}
+
 body {
     margin: 0 auto;
     max-width: 800px;
     padding: 20 20px;
-    background-image: url("https://images.pexels.com/photos/1236044/pexels-photo-1236044.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" )
 
 }
 
@@ -14,10 +21,27 @@ body {
     margin: 10px 0;
 }
 
-trouble {
+.trouble {
     text-align: center;
     color: slategrey
     font-size: 400px
     font-family: "Times New Roman" 
     
+}
+
+.imagen_fondo {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: rotate(180deg);
+}
+
+html { 
+    background: url("https://images.pexels.com/photos/1236044/pexels-photo-1236044.jpeg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
