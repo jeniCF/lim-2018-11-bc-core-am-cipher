@@ -2,18 +2,22 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>TRADUCTOR ROBOTIN </title>
+    <title>TRADUCTOR </title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header> 
-      <h1>BIENVENIDO AL CHAT TRADUCTOR DE MENSAJES
+      <h1>BIENVENIDO AL TRADUCTOR DE MENSAJES DE AYUDA
       </h1>
     </header>
-    <img src="https://images.pexels.com/photos/1236044/pexels-photo-1236044.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class = "fontimage">
     
+  
   <div id= "first-page-title">
     <p>BIENVENIDOS</p>
+    <p class = "trouble">Alguien te ha secuestrado! Lo único que tienes a la mano es un traductor manual el cual tiene 
+      comunicación con la policía. Pero, ¡CUIDADO! Tu secuestrador puede interceptar los mensajes que envíes.
+       ¿Te atreves a usarlo?
+    </p>
      <button type="button" id="start">EMPEZAR</button>
   </div>
   
@@ -21,8 +25,9 @@
 <form>
 
  <div id= "main-page">
-    <!-- Eliminar comentario cuando el textarea se solucione
-      <p> <textarea id="result" placeholder = "Aqui verás tu mensaje"class="chat" ></textarea></p> -->
+    <!-- Eliminar comentario cuando el textarea se solucione -->
+      <p> <textarea id="result" placeholder ="Aquí verás tu mensaje" class="chat">
+      </textarea></p> 
     <label for= "input-text"> Ingresa el desplazamiento que deseas para tu mensaje</label>
 
   <p><input type="number" id="offsetin"></p>
@@ -31,13 +36,13 @@
   <p><input type="text" id="messagetocipher" placeholder="Escribe AQUI el mensaje que quieres cifrar"> </p>
 
   <table>
-    <button type="button" id="cipherbutton">CIFRAR</button>
+    <button type="button" id="cipherbutton">ENCRIPTAR MENSAJE</button>
   </table>
 
 <p><input id="messagetodecipher" type= "text"  placeholder="Escribe AQUI el mensaje que quieres descifrar" ></p>
 
   <table>
-    <button type="button" id="decipherbutton">DESCIFRAR </button>    
+    <button type="button" id="decipherbutton"> LEER MENSAJE </button>    
   </table>
   
   <button type="button" id="clean">LIMPIAR </button>    
