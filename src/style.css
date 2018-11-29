@@ -1,16 +1,75 @@
 h1{
   text-align: center;
-  text-decoration-line: overline underline;
-  text-decoration-style: wavy;
-  color: #dedede
-
+  font-family: 'Permanent Marker', cursive;
+  font-size: 350%; 
+  color:  #8CA1B1;
+  text-shadow: 
+  2px 0 0 #000, 
+  -2px 0 0 #000, 
+  0 2px 0 #000, 
+  0 -2px 0 #000, 
+  1px 1px #000, 
+  -1px -1px 0 #000,
+  1px -1px 0 #000, 
+  -1px 1px 0 #000;
 }
 
 body {
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 20 20px;
+    margin: auto;
+    max-width: 700px;
+    padding: 20px 200px 20px 200px;
+}
 
+
+.trouble{    
+    text-align: center;
+    margin: 100px 150px;
+    width: 500px;
+    padding: 20px 25px ;
+    box-sizing: border-box;
+    background-color: lightblue;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    margin-right: 18%;
+    margin-left: 13%;
+}
+.welcome {
+    font-family: 'Alegreya', serif;
+    font-size: 200%;
+    color: slategrey;
+}
+
+.explanation{
+    font-family: 'Old Standard TT', serif;
+    font-size: 130%;
+
+}
+
+.startbutton {
+    font-family: 'Shadows Into Light', cursive;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 150%;
+    padding: 1% 0.5% 0.2% 0.05% ;
+    cursor: pointer;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%
+    
+  }
+  
+
+
+html { 
+    background: url("https://images.pexels.com/photos/1236044/pexels-photo-1236044.jpeg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .chat {
@@ -19,29 +78,6 @@ body {
     border-radius: 5px;
     padding: 10px;
     margin: 10px 0;
-}
-
-.trouble {
-    text-align: center;
-    color: slategrey
-    font-size: 400px
-    font-family: "Times New Roman" 
-    
-}
-
-.imagen_fondo {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transform: rotate(180deg);
-}
-
-html { 
-    background: url("https://images.pexels.com/photos/1236044/pexels-photo-1236044.jpeg") no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    height: 180px;
+    width: 300px
 }

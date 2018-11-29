@@ -6,10 +6,10 @@ const cipher_ = (message,offset) => {
   
   for(let i =0 ; i< message.length; i++) {
 
-    let ascii= to_codeascii.push(message.charCodeAt(i));
+    to_codeascii.push(message.charCodeAt(i));
     
     if (to_codeascii[i] === 32) {
-    applying_offset[i] = [32];
+      applying_offset[i]= 32;
     }
     
     else {applying_offset.push((to_codeascii[i] + offset -65)%26 +65);
@@ -29,10 +29,10 @@ const cipher_ = (message,offset) => {
   
   for (let i=0; i <messagede.length; i++) {
     
-  let ascii= tocodeascii_de.push(messagede.charCodeAt(i));
+  tocodeascii_de.push(messagede.charCodeAt(i));
 
 if (tocodeascii_de[i] === 32) {
-  applying_offset_de[i] = [32];
+  applying_offset_de[i] = 32;
   }
 
   else {

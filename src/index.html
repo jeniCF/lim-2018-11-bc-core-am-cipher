@@ -4,28 +4,31 @@
     <meta charset="utf-8">
     <title>TRADUCTOR </title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Alegreya|Old+Standard+TT|Permanent+Marker|Shadows+Into+Light" rel="stylesheet">
   </head>
   <body>
-
     <header> 
-      <h1>BIENVENIDO AL TRADUCTOR DE MENSAJES DE AYUDA
+      <h1>LLAMADA DE AUXILIO
       </h1>
     </header>
     
   
-  <div id= "first-page-title">
-    <p>BIENVENIDOS</p>
-    <p class = "trouble">Alguien te ha secuestrado! Lo único que tienes a la mano es un traductor manual el cual tiene 
+  <article id= "first-page-title">
+    
+    <section class = "trouble">
+        <p class= "welcome">BIENVENIDOS</p>
+      <p class="explanation">Alguien te ha secuestrado! Lo único que tienes a la mano es un traductor manual el cual tiene 
       comunicación con la policía. Pero, ¡CUIDADO! Tu secuestrador puede interceptar los mensajes que envíes.
-       ¿Te atreves a usarlo?
-    </p>
-     <button type="button" id="start">EMPEZAR</button>
-  </div>
-  
+       ¿Te atreves a usarlo?</p>
+    </section>
+    <section >
+      <button type="button" id="start" class="startbutton">EMPEZAR</button>
+    </section>
+  </article>
   
 <form>
 
- <div id= "main-page">
+ <main id= "main-page" class="main_page">
     <!-- Eliminar comentario cuando el textarea se solucione -->
       <p> <textarea id="result" placeholder ="Aquí verás tu mensaje" class="chat">
       </textarea></p> 
@@ -47,9 +50,7 @@
   </table>
   
   <button type="button" id="clean">LIMPIAR </button>    
-
-
-  </div>
+</main>
 </form>
 
     <script src="cipher.js"></script>
