@@ -2,7 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>TRADUCTOR </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+maximum-scale=1">
+    <title>LLAMADA DE AUXILIO </title>
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Alegreya|Old+Standard+TT|Permanent+Marker|Shadows+Into+Light" rel="stylesheet">
   </head>
@@ -29,27 +31,25 @@
 <form>
 
  <main id= "main-page" class="main_page">
-    <!-- Eliminar comentario cuando el textarea se solucione -->
-      <p> <textarea id="result" placeholder ="Aquí verás tu mensaje" class="chat">
-      </textarea></p> 
-    <label for= "input-text"> Ingresa el desplazamiento que deseas para tu mensaje</label>
+<article class="enterdata"> 
 
+<section class="ciphersection"> 
+  <label for= "input-text" class= "textenternumber"> Ingresa el desplazamiento que deseas para tu mensaje</label>
   <p><input type="number" id="offsetin"></p>
-  
-   <label for= "input-text"> Ingresa el mensaje que quieres cifrar</label>
-  <p><input type="text" id="messagetocipher" placeholder="Escribe AQUI el mensaje que quieres cifrar"> </p>
+  <p><label for= "input-text" class= "textentermessage"> Ingresa el mensaje que quieres cifrar</label></p>
+  <input type="text" id="messagetocipher" placeholder="Escribe AQUI el mensaje que quieres cifrar">
+  <p> <button type="button" id="cipherbutton">ENCRIPTAR MENSAJE</button> </p>
+   </section>
+   <textarea id="result" placeholder ="Aquí verás tu mensaje" class="chat"></textarea>
+</article>
 
-  <table>
-    <button type="button" id="cipherbutton">ENCRIPTAR MENSAJE</button>
-  </table>
-
-<p><input id="messagetodecipher" type= "text"  placeholder="Escribe AQUI el mensaje que quieres descifrar" ></p>
-
-  <table>
-    <button type="button" id="decipherbutton"> LEER MENSAJE </button>    
-  </table>
-  
-  <button type="button" id="clean">LIMPIAR </button>    
+<article>
+<section class= "buttonsdecipher">
+<button type="button" id="decipherbutton"> LEER MENSAJE </button>    
+<button type="button" id="clean">LIMPIAR </button>    
+</section>
+<p><textarea id="messagetodecipher" type= "text"  placeholder="Mensaje enviado"></textarea></p>
+</article>
 </main>
 </form>
 
