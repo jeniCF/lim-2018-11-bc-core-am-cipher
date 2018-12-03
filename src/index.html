@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1,
-maximum-scale=3">
+maximum-scale=1">
     <title>LLAMADA DE AUXILIO </title>
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Alegreya%7cOld+Standard+TT%7cPermanent+Marker%7cShadows+Into+Light" rel="stylesheet">
@@ -41,21 +41,23 @@ maximum-scale=3">
 <article class="enterdata"> 
 
 <section class="ciphersection"> 
-  <label for= "offsetin" class= "textenternumber"> Ingresa el desplazamiento que deseas para tu mensaje</label>
-  <p><input type="number" id="offsetin"></p>
-  <p><label for= "messagetocipher" class= "textentermessage"> Ingresa el mensaje que quieres cifrar</label></p>
-  <input type="text" id="messagetocipher" placeholder="Escribe AQUI el mensaje que quieres cifrar">
-  <p> <button type="button" id="cipherbutton">ENCRIPTAR MENSAJE</button> </p>
+  <label for= "offsetin" class= "textenternumber" style="order: 1"> Ingresa el desplazamiento que deseas para tu mensaje</label>
+  <p><input type="number" id="offsetin" style="order: 2"></p>
+  <p><label for= "messagetocipher" class= "textentermessage" style="order: 3"> Ingresa el mensaje que quieres cifrar</label></p>
+  <input type="text" id="messagetocipher" style="order: 4"placeholder="Escribe AQUI el mensaje que quieres cifrar">
+  <p> <button type="button" id="cipherbutton" style="order: 5">ENCRIPTAR MENSAJE</button> </p>
    </section>
-   <textarea id="result" placeholder ="Aquí verás tu mensaje" class="chat"></textarea>
+   <textarea id="result" placeholder ="Aquí verás tu mensaje" style= "order: 6" class="chat"></textarea>
 </article>
 
 <article>
-<section class= "buttonsdecipher">
+<section class= "buttonsdecipher" style="order: 7">
 <button type="button" id="decipherbutton"> LEER MENSAJE </button>    
 <button type="button" id="clean">LIMPIAR </button>    
 </section>
-<p><textarea id="messagetodecipher" placeholder="Mensaje enviado"></textarea></p>
+<section>
+<textarea id="messagetodecipher" placeholder="Mensaje enviado" style="order: 8"></textarea>
+</section>
 </article>
 </main>
 </form>
