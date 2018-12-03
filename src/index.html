@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1,
-maximum-scale=1">
+maximum-scale=3">
     <title>LLAMADA DE AUXILIO </title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Alegreya|Old+Standard+TT|Permanent+Marker|Shadows+Into+Light" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya%7cOld+Standard+TT%7cPermanent+Marker%7cShadows+Into+Light" rel="stylesheet">
   </head>
   <body>
     <header> 
@@ -21,15 +21,14 @@ maximum-scale=1">
         <p class= "welcome">BIENVENIDOS</p>
       <p class="explanation"> ¿Deseas brindar información oportuna que permita la captura de miembros, jefes, dirigentes o
         cabecillas de una organización criminal de trata de personas? Se garantiza la confidencialidad de los datos</p>
-        <p class="Instruction"><strong>INSTRUCCIONES DE USO</strong> 
-          <ol>
+        INSTRUCCIONES DE USO 
+        <ul class="Instruction">
             <li>Ingresa la información que deseas aportar: <strong> Ejemplo: Calle los Cipreses</strong></li>
             <li>Ingresa el despalazamiento para que tu mensaje sea encriptado <strong>Ejemplo: 3</strong> </li>
             <li>Has click en el boton ya sea Encriptar mensaje o Leer mensaje para comprobar el mensaje que enviarás : <strong>cifrar</strong></li>
             <li>Ya puedes enviar tu mensaje</li> 
-          </ol>  
-          </center>     
-        </p> 
+        </ul>  
+         
     </section>
     <section >
       <button type="button" id="start" class="startbutton">EMPEZAR</button>
@@ -42,9 +41,9 @@ maximum-scale=1">
 <article class="enterdata"> 
 
 <section class="ciphersection"> 
-  <label for= "input-text" class= "textenternumber"> Ingresa el desplazamiento que deseas para tu mensaje</label>
+  <label for= "offsetin" class= "textenternumber"> Ingresa el desplazamiento que deseas para tu mensaje</label>
   <p><input type="number" id="offsetin"></p>
-  <p><label for= "input-text" class= "textentermessage"> Ingresa el mensaje que quieres cifrar</label></p>
+  <p><label for= "messagetocipher" class= "textentermessage"> Ingresa el mensaje que quieres cifrar</label></p>
   <input type="text" id="messagetocipher" placeholder="Escribe AQUI el mensaje que quieres cifrar">
   <p> <button type="button" id="cipherbutton">ENCRIPTAR MENSAJE</button> </p>
    </section>
@@ -56,7 +55,7 @@ maximum-scale=1">
 <button type="button" id="decipherbutton"> LEER MENSAJE </button>    
 <button type="button" id="clean">LIMPIAR </button>    
 </section>
-<p><textarea id="messagetodecipher" type= "text"  placeholder="Mensaje enviado"></textarea></p>
+<p><textarea id="messagetodecipher" placeholder="Mensaje enviado"></textarea></p>
 </article>
 </main>
 </form>
