@@ -21,14 +21,15 @@ describe('cipher.encode', () => {
     
     });
   });
-  describe('cipher.decode', () => {
+  describe("cipher.decode", () => {
 
     it('debería ser una función', () => {
       assert.equal(typeof cipher.decode, 'function');
     });
 
     it('debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "HIJKLMNOPQRSTUVWXYZABCDEFG" con offset 33', () => {
-      assert.equal(cipher.decode ("HIJKLMNOPQRSTUVWXYZABCDEFG", 33),"ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+      assert.equal(cipher.decode (33, "HIJKLMNOPQRSTUVWXYZABCDEFG"),"ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+    
     });
 
     it('debería retornar "HIJ KLM" para "ABC DEF" con offset 33', () => {

@@ -16,7 +16,7 @@ document.getElementById("start").addEventListener("click", function(){
    else {
     let offseten= parseInt(document.getElementById("offsetin").value);
     let messageen = (document.getElementById("messagetocipher").value).toUpperCase();
-    let messageentrance= cipher.encode(messageen,offseten);
+    let messageentrance= cipher.encode(offseten,messageen);
     document.getElementById("result").value = messageentrance;
    }
 });
@@ -30,7 +30,7 @@ document.getElementById("decipherbutton").addEventListener("click", function() {
     let offseten = parseInt(document.getElementById("offsetin").value);    
     let messageen = (document.getElementById ("result").value).toUpperCase();
 
-    let messageentrance= cipher.decode(messageen,offseten);
+    let messageentrance= cipher.decode(offseten,messageen);
     document.getElementById("messagetodecipher").value = messageentrance;
    }
     });
