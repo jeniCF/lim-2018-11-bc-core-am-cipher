@@ -1,4 +1,4 @@
-const cipher_ = (message,offset) => {
+const cipher_ = (offset, message) => {
 
   let to_codeascii= [];
   let applying_offset =[];
@@ -22,7 +22,7 @@ const cipher_ = (message,offset) => {
   }
   
   
-  const decipher_ = (messagede,offsetde) => {
+  const decipher_ = (offsetde, messagede) => {
   let tocodeascii_de = [];
   let applying_offset_de =[];
   let ascii_to_cipher_de = [];

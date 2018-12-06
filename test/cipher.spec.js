@@ -13,11 +13,11 @@ describe('cipher.encode', () => {
     });
 
     it('debería retornar "HIJKLMNOPQRSTUVWXYZABCDEFG" para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offset 33', () => {
-      assert.equal(cipher.encode ("ABCDEFGHIJKLMNOPQRSTUVWXYZ",33), "HIJKLMNOPQRSTUVWXYZABCDEFG");
+      assert.equal(cipher.encode (33,"ABCDEFGHIJKLMNOPQRSTUVWXYZ"), "HIJKLMNOPQRSTUVWXYZABCDEFG");
     });
 
     it('debería retornar "ABC DEF" para "HIJ KLM" con offset 33', () => {
-      assert.equal(cipher.encode("ABC DEF", 33),"HIJ KLM");
+      assert.equal(cipher.encode(33,"ABC DEF"),"HIJ KLM");
     
     });
   });
@@ -28,10 +28,10 @@ describe('cipher.encode', () => {
     });
 
     it('debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "HIJKLMNOPQRSTUVWXYZABCDEFG" con offset 33', () => {
-      assert.equal(cipher.decode ("HIJKLMNOPQRSTUVWXYZABCDEFG", 33),"ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+      assert.equal(cipher.decode (33,"HIJKLMNOPQRSTUVWXYZABCDEFG"),"ABCDEFGHIJKLMNOPQRSTUVWXYZ");
     });
 
     it('debería retornar "HIJ KLM" para "ABC DEF" con offset 33', () => {
-      assert.equal(cipher.decode("HIJ KLM", 33),"ABC DEF");
+      assert.equal(cipher.decode(33,"HIJ KLM" ),"ABC DEF");
   });
   });
